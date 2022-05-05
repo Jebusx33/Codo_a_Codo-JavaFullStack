@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+    overflow-x: hidden;   
+}
+body{
+    max-width: 1874px;
+}
+.navbar {
+    max-width: 1874px;
+    height: 100px;
+    background-color: #353A40 !important;
+    text-shadow:.5px .5px 1px black;
+}
+
+.logoCodoadodo {
+    width: 8%;
+    margin-left: 6%;
+}
+#text_logo{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.navbar-brand {
+    color: #F0F0EE !important;
+  
+}
+
+.collapse {
+    margin-left: 17% !important;
+
+}
+
+.nav-item .nav-link {
+    font-size: 1.3rem;
+    font-weight: 500;
+    transition: all 15ms;
+}
+
+#nav-Conferencia {
+    color: #F0F0EE !important;
+}
+#nav-Conferencia:hover {
+    color:#bdbec1 !important;
+}
+
+.nav-item .nav-disabled {
+    color: #9B9CA0 !important;
+}
+.nav-item .nav-disabled:hover{
+    color: #F0F0EE !important;
+}
+#nav-tickets {
+    color: #198754!important;
+    transition: all 15ms;
+}
+#nav-tickets:hover{
+    color: #27A844 !important;
+}
+
+.home_container {
+    position: relative;
+    display: inline-block;
+
+}
+
+.carousel_img {
+    margin-top: -2.5%;
+}
+
+.opacity-3 {
+    opacity: .5 !important;
+}
+
+.home_data {
+    height: 350px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: whitesmoke;
+    text-shadow:1px 1px 2px black;
+
+}
+
+.home_data > h1 {
+    height: 18%;
+    text-align: end;
+    margin-right: 30%;
+}
+
+.home_data>p {
+    text-align: end;
+    margin-right: 30%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.button_home{
+    text-align: end;
+    margin-right: 31%;
+}
+#btnSerOrador{
+    font-size: x-large !important;
+}
+#btnComprarTiclets {
+    background-color: #27A844;
+    font-size: x-large !important;
+}
+
+#btnComprarTiclets:hover {
+    background-color: #198754;
+}
+.cards{
+    margin-bottom: 1rem;
+}
+.title_data{
+    height: 10%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.titles h5{
+     overflow-y: hidden;
+    margin-top: 1rem;
+    margin-right: 1%;
+    padding-bottom: -.5rem;
+    font-size: 1rem;
+    
+}
+.titles h3{
+    overflow-y: hidden;
+    margin-bottom: .5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+#cards_group{
+margin-left: 19%;
+}
+.card{
+    width: 81%;
+    height: 645px;
+}
+.card_spacing{
+    margin-right: -5.5%;
+}
+
+.topics{
+    overflow-y: hidden;
+    height: 30px;
+    flex-direction: column;
+ 
+}
+.javaScript{
+    overflow-y: hidden;
+    height: 1.5rem;
+    width: 5.5rem;
+    margin-right: 10px;
+    float:left; 
+    display:block;
+    background-color: #FEC009;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+.react{
+    overflow-y: hidden;
+    height: 1.5rem;
+    width: 3.5rem;
+    margin-right: 20px;
+    float:left; 
+    display:block;
+    background-color: #18A3B8;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.negocios{
+    overflow-y: hidden;
+    height: 1.5rem;
+    width: 5rem;
+    margin-right: 15px;
+    float:left; 
+    display:block;
+    background-color: #6C757E;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.startups{
+    overflow-y: hidden;
+    height: 1.5rem;
+    width: 3.5rem;
+    margin-right: 20px;
+    float:left; 
+    display:block;
+    background-color: #DC3546;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    color: whitesmoke;
+}
+.card h5{
+    margin-top: -.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+.aboutBsAs{
+    height: 525px;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    display: flex;
+    border-color: 1px solid whitesmoke;
+}
+.aboutBsAs .beach{
+    width: 50%;
+    border: 1px solid whitesmoke;
+    
+}
+.aboutBsAs .beach img{
+height: 522px;
+ width: 100%;
+}
+.infoBsAs{
+    padding-top: 2rem;
+    padding-left: 2rem;
+    background-color: #333A40;
+    width: 50%;
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+}
+.infoBsAs h3{
+    height: 2.5rem;
+}
+.infoBsAs p{
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    text-shadow:1px 1px 2px black;
+}
+#btnInfoBsAs{
+    font-size: larger !important;
+}
+.form_orador{
+    margin-left: 20%;
+    width: 950px;
+}
+.form_orador label{
+  margin-left: 20%;
+}
+
+label i{
+    width: 40%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: dashed 1px;
+}
+.inputNames{
+    width: 98% !important;
+    font-size: 30px;
+}
+form button{
+    width: 100%;
+    background-color: #96C93E !important;
+    border: gray;
+    font-size: x-large !important;
+}
+#exampleFormControlTextarea1{
+    height: 130px;
+}
+footer{
+    height: 131px;
+    background-color: #1C3947 ;
+}
+.footer-barNav{
+   padding-top: 1.6%;
+   padding-left: 16%;
+}
+.footer-nav{
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    padding-left: 1%;
+}
+.footer-nav li{
+    display: inline-block;
+   
+}
+.footer-nav li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all 15ms;
+}
+.footer-nav li a:hover{
+color:  #6e7277;
+}
