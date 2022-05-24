@@ -1,0 +1,165 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico Integrador Front End Con JS</title>
+    <link rel="icon" type="image/x-icon" href="images/codoacodo.ico">
+    <link rel="stylesheet" media="only screen and (max-width: 1873px)" href="css/style.css">
+    <link rel="stylesheet" href="css/tickets.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top ">
+            <div class="container-fluid">
+                <img class="logoCodoadodo" src="images/codoacodo.png" alt="imagen logo codo a codo">
+                <a class="navbar-brand" id="text_logo" href="index.html">Conf Bs As</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-Conferencia" href="#">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-disabled navBarNav" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-disabled navBarNav" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-disabled navBarNav" href="#">Conviértete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-tickets" href="tickets.html">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id="continerMainTickets">
+        <section id="ticketsCards mt-2">
+            <div class="containerCards row row-cols-1 row-cols-md-3 g-4">
+                <div class="card border-primary mb-3 me-3" style="max-width: 18rem; max-height:16rem;">
+                    <div class="card-body text-primary">
+                        <h5 class="card-title mb-4">Estudiante</h5>
+                        <h6 class="mb-4">Tienen un descuento</h6>
+                        <h4 class="mb-4">80%</h4>
+                        <p class="card-text mb-4">*presentar documentacion</p>
+                    </div>
+                </div>
+                <div class="card border-success mb-3 me-3" style="max-width: 18rem; max-height:16rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title mb-4">Trainee</h5>
+                        <h6 class="mb-4">Tienen un descuento</h6>
+                        <h4 class="mb-4">50%</h4>
+                        <p class="card-text mb-4">*presentar documentacion</p>
+                    </div>
+                </div>
+                <div class="card border-warning mb-3 me-3" style="max-width: 18rem; max-height:16rem;">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Junior</h5>
+                        <h6 class="mb-4">Tienen un descuento</h6>
+                        <h4 class="mb-4">15%</h4>
+                        <p class="card-text mb-4">*presentar documentacion</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ventas">
+            <div class="containerVentas">
+                <h5>venta</h5>
+                <h3>valor de ticket $200</h3>
+                <form id="formTickets" action="" class="form_orador mb-5" onclick="limpiarFormulario()">
+                    <div class="row g-2 mt-1 mb-3">
+                        <div class="col-md">
+                            <input id="name" class="form-control inputNames  " type="text" placeholder="Nombre"
+                                aria-label="default input example" minlength="3" required>
+                        </div>
+                        <div class="col-md">
+                            <input id="lastname" class="form-control inputNames ms-2" type="text" placeholder="Apellido"
+                                aria-label="default input example" minlength="3" required>
+                        </div>
+                    </div>
+                    <div class="mb-2">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Correo" id="email" required>
+                    </div>
+                    <div class="row g-2 mt-1 mb-3">
+                        <div class="col-md">
+                            <label for=""> Cantidad</label>
+                            <input id="cantidad" name="cantidad" class="form-control  " type="number"
+                                placeholder="Cantidad" aria-label="default input example" min="1" max="100">
+                        </div>
+                        <div class="col-md">
+                            <label for="">Categoria</label>
+                            <select id="descuento" id="validationServer04" name="descuento" onchange="mostrarValor();"
+                                class="form-select" aria-label="Default select example">
+                                <option>Elija una opcion</option>
+                                <option value="0">Estudiante</option>
+                                <option value="1">Trainee</option>
+                                <option value="2">Junior</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="infoPagar" class="alert alert-primary mt-4 mb-4" role="alert">
+                        Total a pagar: $
+                    </div>
+                    <div class="row g-2 mt-1 mb-3">
+                        <div class="col-md">
+                            <button type="button" class="btn btn-success btnBorrar" id="btnBorrar"
+                                value="submit">Borrar</button>
+                        </div>
+                        <div class="col-md">
+                            <button type="button" class="btn btn-success btnResumen" id="btnResumen">Resumen</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-barNav ">
+            <ul class="footer-nav">
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Preguntas frecuentes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Prensa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Términos y <br> condiciones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ">Estudiantes</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+}
+
+#nav-tickets {
+    color: #27A844 !important;
+}
+
+#continerMainTickets {
+    margin-top: 150px;
+}
+
+.containerCards {
+    margin-left: 21% !important;
+}
+
+.card-body {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.containerCards .card-body h4,
+h5,
+h6 {
+    overflow-y: hidden;
+    color: black;
+}
+
+.containerCards .card-body h4 {
+    font-weight: bold;
+}
+
+.containerCards .card-body p {
+    color: grey;
+}
+
+.containerVentas h5 {
+    margin-left: -2%;
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.containerVentas h3 {
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.containerVentas form label {
+    margin-left: 1%;
+    margin-bottom: 2%;
+}
